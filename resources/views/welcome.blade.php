@@ -28,15 +28,38 @@
         </script>
         <style>
             .title-text{
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 2; /* number of lines to show */
-            line-clamp: 2; 
-            -webkit-box-orient: vertical;
-        }
-        .h-calc{
-            height: calc(100vh - 64px);
-        }
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2; /* number of lines to show */
+                line-clamp: 2; 
+                -webkit-box-orient: vertical;
+            }
+            .h-calc{
+                height: calc(100vh - 64px);
+            }
+            ::-webkit-scrollbar {
+                width: 7px;
+                height: 7px;
+                border-radius: 10px;
+
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background-color: #97c5d9;
+                box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: #1967D2;
+                border-radius: 10px;
+            }
+
+            ::-webkit-scrollbar-corner {
+                display: none;
+            }            
         </style>
         <title>Site</title>
     </head>
